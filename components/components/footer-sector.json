@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_components_footer_sectors",
+  "info": {
+    "name": "FooterSector",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "FooterMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.footer-menu"
+    },
+    "Copyright": {
+      "type": "string"
+    },
+    "aboutUs": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "SocialButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.social-button"
+    }
+  }
+}

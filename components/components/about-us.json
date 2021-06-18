@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_aboutuses",
+  "info": {
+    "name": "AboutUs",
+    "icon": "user-friends",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "AboutUsChild": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.about-us-child"
+    }
+  }
+}

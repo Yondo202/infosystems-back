@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_home_tops",
+  "info": {
+    "name": "HomeTopText",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_big": {
+      "type": "string"
+    },
+    "text_sm": {
+      "type": "string"
+    },
+    "text_first": {
+      "type": "string"
+    },
+    "text_write": {
+      "type": "string"
+    },
+    "text_last": {
+      "type": "string"
+    }
+  }
+}

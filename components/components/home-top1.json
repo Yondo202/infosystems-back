@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_components_home_top1s",
+  "info": {
+    "name": "HomeTop1",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "BigText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.home-top"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.home-top-card"
+    }
+  }
+}

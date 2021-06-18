@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_about_us_two_children",
+  "info": {
+    "name": "AboutUsTwoChild",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

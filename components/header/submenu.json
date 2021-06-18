@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_header_submenus",
+  "info": {
+    "name": "submenu",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

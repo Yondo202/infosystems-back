@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_home_middles",
+  "info": {
+    "name": "HomeMiddle",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "ProductSector": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.product-sector"
+    }
+  }
+}

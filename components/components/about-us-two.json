@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_about_us_twos",
+  "info": {
+    "name": "AboutUsTwo",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AboutUsTwoChild": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.about-us-two-child"
+    },
+    "Awards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.awards"
+    },
+    "PurposeComp": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.purpose-comp"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_components_home_top_cards",
+  "info": {
+    "name": "HomeTopCard",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "code": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "required": true
+    },
+    "color_code": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_purpose_comps",
+  "info": {
+    "name": "PurposeComp",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "smTitle": {
+      "type": "string"
+    },
+    "AboutList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.about-list"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_components_contacts",
+  "info": {
+    "name": "Contact",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "location": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "SocialButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.social-button"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

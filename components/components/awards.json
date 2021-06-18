@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_awards",
+  "info": {
+    "name": "Awards",
+    "icon": "arrow-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

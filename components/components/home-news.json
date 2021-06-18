@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_home_news",
+  "info": {
+    "name": "HomeNews",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

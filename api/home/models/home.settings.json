@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Layout": {
+      "type": "dynamiczone",
+      "components": [
+        "components.home-top1",
+        "components.home-middle",
+        "components.home-news"
+      ]
+    }
+  }
+}

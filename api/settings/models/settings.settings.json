@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "settings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header_menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.header-menu"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "FooterSector": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.footer-sector"
+    }
+  }
+}

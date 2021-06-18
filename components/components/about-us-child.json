@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_about_us_children",
+  "info": {
+    "name": "AboutUsChild",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
