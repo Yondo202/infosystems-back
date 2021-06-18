@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infosystem-reports",
+      "handler": "infosystem-report.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infosystem-reports/count",
+      "handler": "infosystem-report.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infosystem-reports/:id",
+      "handler": "infosystem-report.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/infosystem-reports",
+      "handler": "infosystem-report.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infosystem-reports/:id",
+      "handler": "infosystem-report.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infosystem-reports/:id",
+      "handler": "infosystem-report.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
