@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "product_feedbacks",
+  "collectionName": "issue_answers",
   "info": {
-    "name": "product-issue",
-    "description": ""
+    "name": "issue-answer"
   },
   "options": {
     "increments": true,
@@ -18,18 +17,14 @@
     "content": {
       "type": "richtext"
     },
-    "product": {
-      "via": "product_feedbacks",
-      "model": "product"
+    "product_issue": {
+      "model": "product-feedback",
+      "via": "issue_answers"
     },
     "user": {
-      "via": "product_feedbacks",
+      "via": "issue_answers",
       "plugin": "users-permissions",
       "model": "user"
-    },
-    "issue_answers": {
-      "via": "product_issue",
-      "collection": "issue-answer"
     }
   }
 }

@@ -43,8 +43,8 @@
       "type": "string"
     },
     "product_feedbacks": {
-      "collection": "product-feedback",
-      "via": "product"
+      "via": "product",
+      "collection": "product-feedback"
     }
   }
 }

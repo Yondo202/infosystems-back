@@ -1250,6 +1250,80 @@
                 "type": "string"
               }
             }
+          },
+          "product_feedbacks": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "issue_answers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "issue_answers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "product_issue": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1291,6 +1365,18 @@
           },
           "role": {
             "type": "string"
+          },
+          "product_feedbacks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "issue_answers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

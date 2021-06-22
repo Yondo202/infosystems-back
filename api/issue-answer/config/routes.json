@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/issue-answers",
+      "handler": "issue-answer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/issue-answers/count",
+      "handler": "issue-answer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/issue-answers/:id",
+      "handler": "issue-answer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/issue-answers",
+      "handler": "issue-answer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/issue-answers/:id",
+      "handler": "issue-answer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/issue-answers/:id",
+      "handler": "issue-answer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

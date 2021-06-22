@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "infosystem_reports",
   "info": {
-    "name": "infosystem-report",
+    "name": "infosystem-feedback",
     "description": ""
   },
   "options": {
