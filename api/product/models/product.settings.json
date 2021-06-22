@@ -41,6 +41,10 @@
     },
     "catigory": {
       "type": "string"
+    },
+    "product_feedbacks": {
+      "collection": "product-feedback",
+      "via": "product"
     }
   }
 }
