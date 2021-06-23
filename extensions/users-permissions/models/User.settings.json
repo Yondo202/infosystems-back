@@ -64,8 +64,8 @@
       "collection": "product-feedback"
     },
     "issue_answers": {
-      "collection": "issue-answer",
-      "via": "user"
+      "via": "user",
+      "collection": "issue-answer"
     }
   }
 }

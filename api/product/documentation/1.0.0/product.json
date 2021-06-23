@@ -634,6 +634,9 @@
                     "type": "string"
                   }
                 },
+                "seen": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },

@@ -1279,6 +1279,9 @@
                     "type": "string"
                   }
                 },
+                "seen": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1299,9 +1302,6 @@
               ],
               "properties": {
                 "id": {
-                  "type": "string"
-                },
-                "name": {
                   "type": "string"
                 },
                 "content": {

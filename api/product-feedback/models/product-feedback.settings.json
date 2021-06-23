@@ -30,6 +30,9 @@
     "issue_answers": {
       "via": "product_issue",
       "collection": "issue-answer"
+    },
+    "seen": {
+      "type": "boolean"
     }
   }
 }

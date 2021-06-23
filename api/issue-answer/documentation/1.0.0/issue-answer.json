@@ -535,9 +535,6 @@
           "id": {
             "type": "string"
           },
-          "name": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
@@ -566,6 +563,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "seen": {
+                "type": "boolean"
               },
               "published_at": {
                 "type": "string"
@@ -643,9 +643,6 @@
       },
       "NewIssue-answer": {
         "properties": {
-          "name": {
-            "type": "string"
-          },
           "content": {
             "type": "string"
           },
