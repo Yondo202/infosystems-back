@@ -1279,9 +1279,6 @@
                     "type": "string"
                   }
                 },
-                "seen": {
-                  "type": "boolean"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1312,6 +1309,9 @@
                 },
                 "user": {
                   "type": "string"
+                },
+                "seen": {
+                  "type": "boolean"
                 },
                 "published_at": {
                   "type": "string"

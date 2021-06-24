@@ -23,6 +23,9 @@
       "via": "issue_answers",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "seen": {
+      "type": "boolean"
     }
   }
 }
