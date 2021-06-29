@@ -66,6 +66,12 @@
     "issue_answers": {
       "via": "user",
       "collection": "issue-answer"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "company_register": {
+      "type": "biginteger"
     }
   }
 }

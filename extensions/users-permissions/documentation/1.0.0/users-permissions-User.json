@@ -1324,6 +1324,12 @@
                 }
               }
             }
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "company_register": {
+            "type": "integer"
           }
         }
       },
@@ -1377,6 +1383,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "company_name": {
+            "type": "string"
+          },
+          "company_register": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

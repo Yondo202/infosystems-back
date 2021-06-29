@@ -25,7 +25,8 @@
         "components.all-products",
         "components.about-us",
         "components.about-us-two",
-        "components.contact"
+        "components.contact",
+        "components.programs"
       ]
     }
   }

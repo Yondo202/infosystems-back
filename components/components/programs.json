@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_programs",
+  "info": {
+    "name": "programs",
+    "icon": "download",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "file": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.file"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
