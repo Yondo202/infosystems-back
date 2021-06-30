@@ -538,11 +538,15 @@
           "name": {
             "type": "string"
           },
+          "description": {
+            "type": "string"
+          },
           "email": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
+          "seen": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -555,11 +559,15 @@
           "name": {
             "type": "string"
           },
+          "description": {
+            "type": "string"
+          },
           "email": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
+          "seen": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",

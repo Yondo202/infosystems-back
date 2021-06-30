@@ -20,6 +20,10 @@
     },
     "email": {
       "type": "string"
+    },
+    "seen": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
