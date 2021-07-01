@@ -10,7 +10,7 @@ module.exports = {
       watch: true,
       env: {
         DATABASE_HOST: "localhost",
-        HOST: "localhost",
+        HOST: "0.0.0.0",
         NODE_ENV: "production",
       },
     },
