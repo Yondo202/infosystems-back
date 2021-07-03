@@ -1330,6 +1330,60 @@
           },
           "company_register": {
             "type": "integer"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "slug"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "catigory": {
+                  "type": "string"
+                },
+                "product_feedbacks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "admin_confirmed": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
@@ -1389,6 +1443,16 @@
           },
           "company_register": {
             "type": "integer"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "admin_confirmed": {
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

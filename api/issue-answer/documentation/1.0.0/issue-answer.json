@@ -630,6 +630,15 @@
               "company_register": {
                 "type": "integer"
               },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "admin_confirmed": {
+                "type": "boolean"
+              },
               "created_by": {
                 "type": "string"
               },

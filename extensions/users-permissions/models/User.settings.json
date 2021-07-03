@@ -72,6 +72,14 @@
     },
     "company_register": {
       "type": "biginteger"
+    },
+    "products": {
+      "collection": "product",
+      "via": "user"
+    },
+    "admin_confirmed": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

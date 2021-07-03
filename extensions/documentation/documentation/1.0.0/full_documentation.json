@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/30/2021 12:43:59 PM"
+    "x-generation-date": "07/03/2021 5:03:00 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6784,6 +6784,15 @@
               "company_register": {
                 "type": "integer"
               },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "admin_confirmed": {
+                "type": "boolean"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -6922,6 +6931,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "user": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"
@@ -7506,6 +7518,9 @@
                             "items": {
                               "type": "string"
                             }
+                          },
+                          "user": {
+                            "type": "string"
                           },
                           "published_at": {
                             "type": "string"
@@ -8181,6 +8196,9 @@
                   "type": "string"
                 }
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -8246,6 +8264,15 @@
               },
               "company_register": {
                 "type": "integer"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "admin_confirmed": {
+                "type": "boolean"
               },
               "created_by": {
                 "type": "string"
@@ -8459,6 +8486,78 @@
               }
             }
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "product_feedbacks": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "issue_answers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "company_name": {
+                "type": "string"
+              },
+              "company_register": {
+                "type": "integer"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "admin_confirmed": {
+                "type": "boolean"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8491,6 +8590,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "user": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -9068,6 +9170,15 @@
                 "company_register": {
                   "type": "integer"
                 },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "admin_confirmed": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -9260,6 +9371,60 @@
           },
           "company_register": {
             "type": "integer"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "slug"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "catigory": {
+                  "type": "string"
+                },
+                "product_feedbacks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "admin_confirmed": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
@@ -9319,6 +9484,16 @@
           },
           "company_register": {
             "type": "integer"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "admin_confirmed": {
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

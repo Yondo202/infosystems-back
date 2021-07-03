@@ -574,6 +574,9 @@
                   "type": "string"
                 }
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -639,6 +642,15 @@
               },
               "company_register": {
                 "type": "integer"
+              },
+              "products": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "admin_confirmed": {
+                "type": "boolean"
               },
               "created_by": {
                 "type": "string"

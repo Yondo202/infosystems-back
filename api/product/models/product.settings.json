@@ -45,6 +45,11 @@
     "product_feedbacks": {
       "via": "product",
       "collection": "product-feedback"
+    },
+    "user": {
+      "via": "products",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
