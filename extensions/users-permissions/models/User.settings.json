@@ -75,9 +75,14 @@
     },
     "products": {
       "collection": "product",
-      "via": "user"
+      "via": "users",
+      "dominant": true
     },
     "admin_confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "seen": {
       "type": "boolean",
       "default": false
     }

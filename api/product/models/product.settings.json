@@ -46,10 +46,10 @@
       "via": "product",
       "collection": "product-feedback"
     },
-    "user": {
+    "users": {
       "via": "products",
       "plugin": "users-permissions",
-      "model": "user"
+      "collection": "user"
     }
   }
 }

@@ -30,6 +30,18 @@
     "issue_answers": {
       "via": "product_issue",
       "collection": "issue-answer"
+    },
+    "admin_confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false
+    },
+    "seen": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

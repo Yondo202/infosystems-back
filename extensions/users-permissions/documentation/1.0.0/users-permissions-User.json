@@ -1279,6 +1279,15 @@
                     "type": "string"
                   }
                 },
+                "admin_confirmed": {
+                  "type": "boolean"
+                },
+                "resolved": {
+                  "type": "boolean"
+                },
+                "seen": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1366,8 +1375,11 @@
                     "type": "string"
                   }
                 },
-                "user": {
-                  "type": "string"
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -1382,6 +1394,10 @@
             }
           },
           "admin_confirmed": {
+            "type": "boolean",
+            "default": false
+          },
+          "seen": {
             "type": "boolean",
             "default": false
           }
@@ -1451,6 +1467,10 @@
             }
           },
           "admin_confirmed": {
+            "type": "boolean",
+            "default": false
+          },
+          "seen": {
             "type": "boolean",
             "default": false
           },

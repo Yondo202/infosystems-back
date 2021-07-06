@@ -564,6 +564,15 @@
                   "type": "string"
                 }
               },
+              "admin_confirmed": {
+                "type": "boolean"
+              },
+              "resolved": {
+                "type": "boolean"
+              },
+              "seen": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -637,6 +646,9 @@
                 }
               },
               "admin_confirmed": {
+                "type": "boolean"
+              },
+              "seen": {
                 "type": "boolean"
               },
               "created_by": {

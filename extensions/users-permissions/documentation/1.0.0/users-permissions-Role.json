@@ -588,6 +588,9 @@
                 "admin_confirmed": {
                   "type": "boolean"
                 },
+                "seen": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },
