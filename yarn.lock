@@ -7964,6 +7964,11 @@
   dependencies:
     "nodemailer-fetch" "1.6.0"
 
+"nodemailer@6.6.0":
+  "integrity" "sha512-ikSMDU1nZqpo2WUPE0wTTw/NGGImTkwpJKDIFPZT+YvvR9Sj+ze5wzu95JHkBMglQLoG2ITxU21WukCC/XsFkg=="
+  "resolved" "https://registry.npmjs.org/nodemailer/-/nodemailer-6.6.0.tgz"
+  "version" "6.6.0"
+
 "normalize-path@^2.1.1":
   "integrity" "sha1-GrKLVW4Zg2Oowab35vogE3/mrtk="
   "resolved" "https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz"
@@ -10889,6 +10894,14 @@
     "strapi-helper-plugin" "3.6.3"
     "strapi-utils" "3.6.3"
     "uuid" "^3.1.0"
+
+"strapi-provider-email-nodemailer@^3.6.5":
+  "integrity" "sha512-b2LoA9/pVVFoJ+LtjE+ZQ8bG/Q4vBOplXodB7bBN2uU2sqNjC6JGXgG/AjISrSHfsNsDLXSj1qq8NZSpKr8XEA=="
+  "resolved" "https://registry.npmjs.org/strapi-provider-email-nodemailer/-/strapi-provider-email-nodemailer-3.6.5.tgz"
+  "version" "3.6.5"
+  dependencies:
+    "lodash" "4.17.21"
+    "nodemailer" "6.6.0"
 
 "strapi-provider-email-sendgrid@^3.6.5":
   "integrity" "sha512-iBM1zqlnmxbXnp4eYgxZOvw6OfNajHWhFtyAfgjIOqnEDHtKZHh2bPyAX+un+QZC2V4cXfsEa7A39n3hSAO4wg=="
