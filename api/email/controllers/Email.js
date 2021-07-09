@@ -1,14 +1,14 @@
 module.exports = {
     index: async ctx =>{
-        await strapi.plugins['email'].services.email.send({
+        const result =  await strapi.plugins['email'].services.email.send({
             to: ctx.request.body.to,
-            from: 'yondooo61@gmail.com',
-            replyTo: 'yondooo61@gmail.com',
+            from: process.env.FROMEMAIL,
+            replyTo: process.env.FROMEMAIL,
             subject: 'Бүртгэл амжилттай',
             // text: 'Text1',
             html: SendHtml
-          });
-        ctx.send('Done!!!');
+        });
+        ctx.send(result);
     }
 }
 
@@ -30,7 +30,6 @@ const SendHtml = `
     <body style="font-family: 'Roboto'; font-size:15px;" >
         <div style="max-width: 900px; margin-top: 30px; padding: 60px 30px; background-color: rgba(0,51,102,.1);" class="contPar">
 
-            
             
             <div style="padding:40px 50px; padding-top: 30px; width: 100%; background-color: white; border-radius: 6px;" class="items">
                 <h5 style="color: black; margin-bottom: 15px;" class="title">Зөвшөөрөл</h5>
