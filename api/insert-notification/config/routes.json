@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/insert-notifications",
+      "handler": "insert-notification.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/insert-notifications/count",
+      "handler": "insert-notification.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/insert-notifications/:id",
+      "handler": "insert-notification.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/insert-notifications",
+      "handler": "insert-notification.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/insert-notifications/:id",
+      "handler": "insert-notification.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/insert-notifications/:id",
+      "handler": "insert-notification.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
