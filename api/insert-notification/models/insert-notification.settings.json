@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insert_notifications",
+  "info": {
+    "name": "insert-notification"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "macsversion": {
+      "type": "integer"
+    },
+    "apptype": {
+      "type": "integer"
+    },
+    "to_customer": {
+      "type": "integer"
+    },
+    "expire_date": {
+      "type": "date"
+    },
+    "acount": {
+      "type": "biginteger"
+    },
+    "filetype": {
+      "type": "integer"
+    },
+    "news_text": {
+      "type": "richtext"
+    },
+    "pdf_file": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "integer"
+    },
+    "customer_id": {
+      "type": "text"
+    }
+  }
+}
