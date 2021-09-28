@@ -569,6 +569,9 @@
           "customer_id": {
             "type": "string"
           },
+          "file_url": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -609,6 +612,9 @@
             "type": "integer"
           },
           "customer_id": {
+            "type": "string"
+          },
+          "file_url": {
             "type": "string"
           },
           "published_at": {
