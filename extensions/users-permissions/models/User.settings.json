@@ -71,7 +71,9 @@
       "type": "string"
     },
     "company_register": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "unique": true,
+      "required": true
     },
     "products": {
       "collection": "product",

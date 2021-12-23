@@ -661,7 +661,8 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "company_register"
               ],
               "properties": {
                 "id": {

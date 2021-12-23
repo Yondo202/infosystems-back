@@ -9,11 +9,11 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^27.0.0",
     "@ckeditor/ckeditor5-image": "^27.0.0",
     "@ckeditor/ckeditor5-react": "^3.0.2",
+    "axios": "^0.21.1",
     "knex": "0.21.18",
     "mysql": "2.18.1",
     "strapi": "3.6.3",

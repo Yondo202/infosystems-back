@@ -1188,7 +1188,8 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "company_register"
         ],
         "properties": {
           "id": {
@@ -1406,7 +1407,8 @@
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "company_register"
         ],
         "properties": {
           "username": {
