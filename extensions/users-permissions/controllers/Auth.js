@@ -23,11 +23,13 @@ module.exports = {
     const params = ctx.request.body;
 
     if(params.company_register || params.email){
-      const company_register = params.company_register?? '00000000';
-      const company_email = params.email?? 'ss';
+      const company_register = params.company_register?params.company_register:'00000000';
+      const company_email = params.email?params.email:'ss';
 
       const cond_register = await strapi.query('user', 'users-permissions').findOne({ company_register: company_register  });
       const cond_email = await strapi.query('user', 'users-permissions').findOne({ email: company_email  });
+
+      console.log(`cond_email`, cond_email)
       
      if(cond_register){
           //finally done
@@ -42,7 +44,7 @@ module.exports = {
         ctx.send({
           token: strapi.plugins['users-permissions'].services.jwt.issue({
             id: cond_email.id,
-            company_register: cond_email.company_register,
+            company_register: cond_email.company_register,d
           }),
         });
         return
@@ -54,11 +56,7 @@ module.exports = {
           })
         );
       }
-
     }
-
-    
-
 
     const store = await strapi.store({
       environment: '',
