@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bankrate",
+      "handler": "bankrate.getRates",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
