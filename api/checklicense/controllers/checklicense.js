@@ -27,7 +27,6 @@ module.exports = {
             }
         
         }else{
-
             return ctx.badRequest(null, 'токен - оо дамжуулна уу');
 
         }
