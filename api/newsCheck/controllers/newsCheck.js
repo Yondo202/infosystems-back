@@ -35,7 +35,7 @@ module.exports = {
         if (
           row.to_customer == NewsSendTo.nstAll ||
           (row.to_customer == NewsSendTo.nstCustom &&
-            row.customer_id?.indexOf(registerno) > -1)
+            row.customer_id.indexOf(registerno) > -1)
         )
           b = true;
         else b = false;
