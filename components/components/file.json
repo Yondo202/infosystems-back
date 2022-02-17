@@ -2,7 +2,8 @@
   "collectionName": "components_components_files",
   "info": {
     "name": "file",
-    "icon": "file"
+    "icon": "file",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,6 +21,12 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "post": {
+      "model": "post"
     }
   }
 }

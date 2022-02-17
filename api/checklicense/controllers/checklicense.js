@@ -7,6 +7,15 @@ module.exports = {
         console.log(`object`, ctx.request.body)
         console.log(`ctx.request.header`, ctx.request.header)
 
+        //finally done
+          // const res = await axios.post('url', { 
+          //   Value:'licence num',
+          //   Regnum: cond_register.company_register,
+          //   IP: "localhost",
+          //   Password: "aeR3z,@LWMsY(FAw"
+          // })
+          // console.log(`res`, res)
+
         if (body.token) {
 
             try {
@@ -23,7 +32,6 @@ module.exports = {
             } catch (err) {
 
               return ctx.badRequest(null, 'хүчингүй токен байна!');
-
             }
         
         }else{

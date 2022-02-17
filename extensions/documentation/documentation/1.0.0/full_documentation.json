@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/23/2021 5:22:42 PM"
+    "x-generation-date": "02/17/2022 3:42:31 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8347,6 +8347,46 @@
                                 "type": "string"
                               }
                             }
+                          },
+                          "full_name": {
+                            "type": "string"
+                          },
+                          "post": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "title": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "image": {
+                                "type": "string"
+                              },
+                              "catigory": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "count": {
+                                "type": "integer"
+                              },
+                              "published_at": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
                           }
                         }
                       }
@@ -8928,6 +8968,46 @@
                                 "type": "object"
                               },
                               "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "full_name": {
+                            "type": "string"
+                          },
+                          "post": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "title": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "image": {
+                                "type": "string"
+                              },
+                              "catigory": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "count": {
+                                "type": "integer"
+                              },
+                              "published_at": {
                                 "type": "string"
                               },
                               "created_by": {
