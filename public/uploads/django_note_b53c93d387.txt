@@ -1,0 +1,14 @@
+python manage.py runserver
+
+databasetei holbogdoh -  python .\manage.py migrate
+database table uusgeh - python .\manage.py makemigrations
+
+
+https://www.django-rest-framework.org/tutorial/1-serialization/
+djangorestframework
+---
+    apiview
+    model
+    serializer
+    modelserializer
+    viewset

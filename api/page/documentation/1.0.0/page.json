@@ -1089,6 +1089,46 @@
                                 "type": "string"
                               }
                             }
+                          },
+                          "full_name": {
+                            "type": "string"
+                          },
+                          "post": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "title": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "image": {
+                                "type": "string"
+                              },
+                              "catigory": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "count": {
+                                "type": "integer"
+                              },
+                              "published_at": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
                           }
                         }
                       }
@@ -1670,6 +1710,46 @@
                                 "type": "object"
                               },
                               "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "full_name": {
+                            "type": "string"
+                          },
+                          "post": {
+                            "required": [
+                              "id"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "title": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "uid"
+                              },
+                              "image": {
+                                "type": "string"
+                              },
+                              "catigory": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "count": {
+                                "type": "integer"
+                              },
+                              "published_at": {
                                 "type": "string"
                               },
                               "created_by": {

@@ -12,10 +12,15 @@ const _ = require('lodash');
 const grant = require('grant-koa');
 const { sanitizeEntity } = require('strapi-utils');
 
+
 const emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const formatError = error => [
   { messages: [{ id: error.id, message: error.message, field: error.field }] },
 ];
+
+const SendRequest = () =>{
+
+}
 
 module.exports = {
   async callback(ctx) {
@@ -32,19 +37,22 @@ module.exports = {
       console.log(`cond_email`, cond_email)
       
      if(cond_register){
-          //finally done
+          
+
           ctx.send({
             token: strapi.plugins['users-permissions'].services.jwt.issue({
               id: cond_register.id,
               company_register: cond_register.company_register,
             }),
           });
+
           return
       }else if(cond_email){
+
         ctx.send({
           token: strapi.plugins['users-permissions'].services.jwt.issue({
             id: cond_email.id,
-            company_register: cond_email.company_register,d
+            company_register: cond_email.company_register
           }),
         });
         return
