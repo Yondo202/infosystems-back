@@ -2,6 +2,36 @@ const axios = require("axios");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
+const currencyCodesOrder = [
+  'USD',
+  'KUB',
+  'CNY',
+  'EUR',
+  'JPY',
+  'GBP',
+  'HKD',
+  'TRY',
+  'AUD',
+  'CAD',
+  'THB',
+  'SGD',
+  'NZD',
+  'CHF'
+];
+
+function sortCurrencies(currencies) {
+  currencies.sort((a, b) => {
+    const orderA = currencyCodesOrder.findIndex(el => el === a.currency)
+    const orderB = currencyCodesOrder.findIndex(el => el === b.currency)
+    return orderA - orderB
+  });
+  currencies.sort((a, b) => {
+    const orderA = currencyCodesOrder.includes(a.currency) ? 0 : 1
+    const orderB = currencyCodesOrder.includes(b.currency) ? 0 : 1
+    return orderA - orderB
+  });
+};
+
 module.exports = {
   getRates: async (ctx) => {
     const keys = [
@@ -13,13 +43,13 @@ module.exports = {
     ];
     const { bankcode } = ctx.request.query;
     const currencies = [];
-    console.log(bankcode);
+
     if (bankcode == undefined || bankcode == "mongol") {
       //Монгол банк
       const res = await axios.get(
         "http://monxansh.appspot.com/xansh.json?currency=USD|RUB|CNY|KRW|EUR|JPY|GBP|HKD|TRY|AUD|CAD|THB|SGD|NZD|CHF"
       );
-      rows = res.data;
+      const rows = res.data;
 
       for (const row of rows) {
         const temp = {};
@@ -46,12 +76,18 @@ module.exports = {
         let index = 0;
         const temp = {};
         for (const cell of cells) {
-          temp[keys[index]] = cell.textContent.trim();
-          index === 4 ? (index = 0) : index++;
+          temp[keys[index]] = index === 0
+            ? cell.textContent.trim()
+            : parseFloat(cell.textContent.trim().replace(/,/g, ''));
+          index === 4
+            ? (index = 0)
+            : index++;
         }
         currencies.push(temp);
       }
     }
+
+    sortCurrencies(currencies);
     ctx.send(currencies);
   },
 };
