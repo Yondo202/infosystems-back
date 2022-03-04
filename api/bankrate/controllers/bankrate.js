@@ -6,6 +6,7 @@ const currencyCodesOrder = [
   'USD',
   'KUB',
   'CNY',
+  'KRW',
   'EUR',
   'JPY',
   'GBP',
