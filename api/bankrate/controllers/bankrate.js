@@ -17,7 +17,7 @@ module.exports = {
     if (bankcode == undefined || bankcode == "mongol") {
       //Монгол банк
       const res = await axios.get(
-        "http://monxansh.appspot.com/xansh.json?currency=USD|EUR|CNY|RUB|GBP|KRW|JPY"
+        "http://monxansh.appspot.com/xansh.json?currency=USD|RUB|CNY|KRW|EUR|JPY|GBP|HKD|TRY|AUD|CAD|THB|SGD|NZD|CHF"
       );
       rows = res.data;
 
