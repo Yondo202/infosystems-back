@@ -4,7 +4,7 @@ const { JSDOM } = jsdom;
 
 const currencyCodesOrder = [
   'USD',
-  'KUB',
+  'RUB',
   'CNY',
   'KRW',
   'EUR',
