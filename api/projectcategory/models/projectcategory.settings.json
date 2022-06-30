@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projectcategories",
+  "info": {
+    "name": "projectcategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "coreissues": {
+      "via": "projectcategory",
+      "collection": "coreissue"
+    }
+  }
+}

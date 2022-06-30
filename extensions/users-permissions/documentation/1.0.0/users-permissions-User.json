@@ -1401,6 +1401,58 @@
           "seen": {
             "type": "boolean",
             "default": false
+          },
+          "coreissues": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "status": {
+                  "type": "boolean"
+                },
+                "checked_user": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "projectcategory": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1475,6 +1527,12 @@
           "seen": {
             "type": "boolean",
             "default": false
+          },
+          "coreissues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

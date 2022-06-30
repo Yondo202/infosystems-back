@@ -34,8 +34,6 @@ module.exports = {
       const cond_register = await strapi.query('user', 'users-permissions').findOne({ company_register: company_register  });
       const cond_email = await strapi.query('user', 'users-permissions').findOne({ email: company_email  });
 
-      console.log(`cond_email`, cond_email)
-      
      if(cond_register){
           
 
