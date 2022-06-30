@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/products": {
+    "/coreissues": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Product"
+                    "$ref": "#/components/schemas/Coreissue"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Coreissue"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Coreissue"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Coreissue"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewCoreissue"
               }
             }
           }
         }
       }
     },
-    "/products/count": {
+    "/coreissues/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Coreissue"
         ],
         "parameters": []
       }
     },
-    "/products/{id}": {
+    "/coreissues/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Coreissue"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Coreissue"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Coreissue"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Coreissue"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewCoreissue"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Coreissue"
         ],
         "parameters": [
           {
@@ -514,103 +514,37 @@
   },
   "components": {
     "schemas": {
-      "Product": {
+      "Coreissue": {
         "required": [
-          "id",
-          "slug"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
+          "email": {
             "type": "string"
           },
-          "slug": {
+          "name": {
             "type": "string"
-          },
-          "image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "description": {
             "type": "string"
           },
-          "count": {
-            "type": "integer",
-            "default": "0"
-          },
-          "catigory": {
+          "title": {
             "type": "string"
           },
-          "product_feedbacks": {
+          "image": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
               ],
               "properties": {
                 "id": {
@@ -619,31 +553,46 @@
                 "name": {
                   "type": "string"
                 },
-                "content": {
+                "alternativeText": {
                   "type": "string"
                 },
-                "product": {
+                "caption": {
                   "type": "string"
                 },
-                "user": {
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
                   "type": "string"
                 },
-                "issue_answers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "ext": {
+                  "type": "string"
                 },
-                "admin_confirmed": {
-                  "type": "boolean"
+                "mime": {
+                  "type": "string"
                 },
-                "resolved": {
-                  "type": "boolean"
+                "size": {
+                  "type": "number"
                 },
-                "seen": {
-                  "type": "boolean"
+                "url": {
+                  "type": "string"
                 },
-                "published_at": {
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
                   "type": "string"
                 },
                 "created_by": {
@@ -655,7 +604,10 @@
               }
             }
           },
-          "users": {
+          "status": {
+            "type": "boolean"
+          },
+          "checked_user": {
             "type": "array",
             "items": {
               "required": [
@@ -740,44 +692,68 @@
               }
             }
           },
+          "projectcategory": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "coreissues": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewProduct": {
-        "required": [
-          "slug"
-        ],
+      "NewCoreissue": {
         "properties": {
-          "title": {
+          "email": {
             "type": "string"
           },
-          "slug": {
+          "name": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "count": {
-            "type": "integer",
-            "default": "0"
-          },
-          "catigory": {
+          "title": {
             "type": "string"
           },
-          "product_feedbacks": {
+          "status": {
+            "type": "boolean"
+          },
+          "checked_user": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "users": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "projectcategory": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -795,7 +771,7 @@
   },
   "tags": [
     {
-      "name": "Product"
+      "name": "Coreissue"
     }
   ]
 }

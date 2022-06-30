@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/products": {
+    "/projectcategories": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Product"
+                    "$ref": "#/components/schemas/Projectcategory"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Projectcategory"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Projectcategory"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Projectcategory"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewProjectcategory"
               }
             }
           }
         }
       }
     },
-    "/products/count": {
+    "/projectcategories/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Projectcategory"
         ],
         "parameters": []
       }
     },
-    "/products/{id}": {
+    "/projectcategories/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Projectcategory"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Projectcategory"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Product"
+                  "$ref": "#/components/schemas/Projectcategory"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Projectcategory"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduct"
+                "$ref": "#/components/schemas/NewProjectcategory"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Product"
+          "Projectcategory"
         ],
         "parameters": [
           {
@@ -514,99 +514,21 @@
   },
   "components": {
     "schemas": {
-      "Product": {
+      "Projectcategory": {
         "required": [
-          "id",
-          "slug"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
+          "name": {
             "type": "string"
           },
           "slug": {
-            "type": "string"
+            "type": "uid"
           },
-          "image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "description": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer",
-            "default": "0"
-          },
-          "catigory": {
-            "type": "string"
-          },
-          "product_feedbacks": {
+          "coreissues": {
             "type": "array",
             "items": {
               "required": [
@@ -616,120 +538,38 @@
                 "id": {
                   "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "content": {
-                  "type": "string"
-                },
-                "product": {
-                  "type": "string"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "issue_answers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "admin_confirmed": {
-                  "type": "boolean"
-                },
-                "resolved": {
-                  "type": "boolean"
-                },
-                "seen": {
-                  "type": "boolean"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "users": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "username",
-                "email",
-                "company_register"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
                 "email": {
                   "type": "string"
                 },
-                "provider": {
+                "name": {
                   "type": "string"
                 },
-                "password": {
+                "description": {
                   "type": "string"
                 },
-                "resetPasswordToken": {
+                "title": {
                   "type": "string"
                 },
-                "confirmationToken": {
-                  "type": "string"
-                },
-                "confirmed": {
-                  "type": "boolean"
-                },
-                "blocked": {
-                  "type": "boolean"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "product_feedbacks": {
+                "image": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "issue_answers": {
+                "status": {
+                  "type": "boolean"
+                },
+                "checked_user": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "company_name": {
+                "projectcategory": {
                   "type": "string"
                 },
-                "company_register": {
-                  "type": "integer"
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "admin_confirmed": {
-                  "type": "boolean"
-                },
-                "seen": {
-                  "type": "boolean"
-                },
-                "coreissues": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "published_at": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -746,34 +586,15 @@
           }
         }
       },
-      "NewProduct": {
-        "required": [
-          "slug"
-        ],
+      "NewProjectcategory": {
         "properties": {
-          "title": {
+          "name": {
             "type": "string"
           },
           "slug": {
-            "type": "string"
+            "type": "uid"
           },
-          "description": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer",
-            "default": "0"
-          },
-          "catigory": {
-            "type": "string"
-          },
-          "product_feedbacks": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "users": {
+          "coreissues": {
             "type": "array",
             "items": {
               "type": "string"
@@ -795,7 +616,7 @@
   },
   "tags": [
     {
-      "name": "Product"
+      "name": "Projectcategory"
     }
   ]
 }

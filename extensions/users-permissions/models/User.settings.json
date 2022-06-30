@@ -87,6 +87,11 @@
     "seen": {
       "type": "boolean",
       "default": false
+    },
+    "coreissues": {
+      "via": "checked_user",
+      "collection": "coreissue",
+      "dominant": true
     }
   }
 }

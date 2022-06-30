@@ -659,6 +659,12 @@
               "seen": {
                 "type": "boolean"
               },
+              "coreissues": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },

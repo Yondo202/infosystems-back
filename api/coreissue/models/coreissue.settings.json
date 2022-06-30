@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coreissues",
+  "info": {
+    "name": "coreissue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "checked_user": {
+      "via": "coreissues",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "projectcategory": {
+      "model": "projectcategory",
+      "via": "coreissues"
+    }
+  }
+}
