@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_infos",
+  "info": {
+    "name": "version_info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "changed_date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "productname": {
+      "type": "enumeration",
+      "enum": [
+        "MACS",
+        "POS",
+        "MACSPOS"
+      ]
+    }
+  }
+}
